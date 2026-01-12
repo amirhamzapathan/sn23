@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Simple Calculator</title> 
+
+<style> 
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family:Arial
+} 
+.box{
+    border:1px solid #000;
+    padding:20px;text-align:center
+} 
+h3{
+    color:black;
+} 
+input,select,button{
+    margin:5px;
+    padding:5px;
+    width:100%
+} 
+button{
+    background:blue;
+    color:white;
+    border:none;
+    cursor:pointer;
+    } 
+</style> 
+</head> 
+
+<body>
+
+<div class="box"> 
+<h3>Simple Calculator</h3> 
+<input id="n1" type="number" placeholder="First number"> 
+<input id="n2" type="number" placeholder="Second number"> 
+<select id="op"> 
+<option value="+">Add</option> 
+<option value="-">Subtract</option> 
+<option value="*">Multiply</option> 
+<option value="/">Divide</option> 
+</select> 
+<button onclick="calc()">Calculate</button> 
+<p id="res"></p> 
+</div> 
+
+
+<script> 
+function calc(){ 
+let a=+n1.value, b=+n2.value, o=op.value; 
+res.innerText="Result: "+eval(a+o+b); 
+} 
+</script> 
+</body> 
+</html>
