@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>jQuery Mini Demo</title>
+
+  <style>
+    body{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+      background:#eef;font-family:Arial;
+    }
+    .box{
+      width:80px;
+      height:80px;
+      background:#007bff;color:#fff;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      margin:15px auto;border-radius:10px;
+      transition:.3s;
+    }
+    button{
+        padding:8px 16px;
+        margin:5px;
+        cursor:pointer
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <p id="para">Original text.</p>
+    <ul id="list"></ul>
+    <div class="box" id="box">Box</div>
+    <button id="btnAdd">Add Item + Text</button>
+    <button id="btnAnimate">Animate Box</button>
+  </div>
+
+  <script>
+    $(function(){
+      let count = 0;
+
+      $("#btnAdd").click(function(){
+        count++;
+        $("#para").append(" +extra");
+        $("#list").append(<li>Item ${count}</li>);
+      });
+
+      $("#btnAnimate").click(function(){
+        $("#box").animate({width:"150px",height:"150px",opacity:0.6},600)
+                  .animate({width:"80px",height:"80px",opacity:1},600)
+                  .css("transform","rotate(20deg)")
+                  .css("background","green");
+      });
+    });
+  </script>
+</body>
+</html>
