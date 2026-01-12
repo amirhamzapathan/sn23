@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class Schedule | vtucode</title>
+
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        table {
+            width: 85%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        caption {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        th, td {
+            border: 1px solid #aaa;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #343a40;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        .core {
+            background-color: #d1e7dd;
+        }
+
+        .lab {
+            background-color: #f8d7da;
+            font-weight: bold;
+        }
+
+        .elective {
+            background-color: #fff3cd;
+        }
+
+        .lunch {
+            background-color: #cfe2ff;
+            font-weight: bold;
+        }
+
+        tfoot {
+            background-color: #dee2e6;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<table>
+    <caption>Weekly Class Schedule</caption>
+
+    <thead>
+        <tr>
+            <th>Day</th>
+            <th>8:30 - 9:30</th>
+            <th>9:30 - 10:30</th>
+            <th>10:30 - 11:30</th>
+            <th>11:30 - 12:30</th>
+            <th>12:30 - 1:30</th>
+            <th>1:30 - 2:30</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Monday</td>
+            <td class="core">Maths</td>
+            <td class="core">DSA</td>
+            <td class="lab">DSA Lab</td>
+            <td class="lab">DSA Lab</td>
+            <td class="lunch" colspan="2">LUNCH BREAK</td>
+        </tr>
+
+        <tr>
+            <td>Tuesday</td>
+            <td class="core">OS</td>
+            <td class="core">Maths</td>
+            <td class="elective">AI</td>
+            <td class="core">DBMS</td>
+            <td class="lunch" colspan="2">LUNCH BREAK</td>
+        </tr>
+
+        <tr>
+            <td>Wednesday</td>
+            <td class="lab">DBMS Lab</td>
+            <td class="lab">DBMS Lab</td>
+            <td class="core">OS</td>
+            <td class="core">Maths</td>
+            <td class="lunch" colspan="2">LUNCH BREAK</td>
+        </tr>
+
+        <tr>
+            <td>Thursday</td>
+            <td class="core">DBMS</td>
+            <td class="elective">AI</td>
+            <td class="core">OS</td>
+            <td class="core">Maths</td>
+            <td class="lunch" colspan="2">LUNCH BREAK</td>
+        </tr>
+
+        <tr>
+            <td>Friday</td>
+            <td class="lab">AI Lab</td>
+            <td class="lab">AI Lab</td>
+            <td class="core">DBMS</td>
+            <td class="core">OS</td>
+            <td class="lunch" colspan="2">LUNCH BREAK</td>
+        </tr>
+
+        <tr>
+            <td>Saturday</td>
+            <td class="elective">Seminar</td>
+            <td class="core">Revision</td>
+            <td colspan="2">Library</td>
+            <td class="lunch" colspan="2">OFF</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="7">End of Weekly Schedule</td>
+        </tr>
+    </tfoot>
+</table>
+
+</body>
+</html>
